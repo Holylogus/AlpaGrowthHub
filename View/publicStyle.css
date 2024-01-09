@@ -12,7 +12,7 @@ body{
 
 }
 nav{
-    height: auto;
+    height: 100px;
     background-color: #3B3B3B;
 }
 nav img{
@@ -24,4 +24,39 @@ nav img{
 }
 .offcanvas{
     background-color: #3B3B3B; 
+}
+.landing{
+    background-image: url(/images/carousel/Magical_growing_tree.jpg);
+    background-size: cover;
+    background-repeat: round;
+    height: 700px;
+}
+.welcomeText{
+    margin:auto;
+    text-align: center;
+    font-size: 48pt;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    color: whitesmoke;
+    font-family: Monsterrat;
+
+}
+.welcomeText-slogen{
+    margin:auto;
+    text-align: center;
+    font-size: 28pt;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: Monsterrat;
+}
+.featured{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 28pt;
+    font-weight: bolder;
 }
