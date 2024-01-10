@@ -60,3 +60,21 @@ nav img{
     font-size: 28pt;
     font-weight: bolder;
 }
+.card img{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+.card-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.card{
+    max-width: 250px;
+    text-align: center;
+    margin: 25px;
+}
