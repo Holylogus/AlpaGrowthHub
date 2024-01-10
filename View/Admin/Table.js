@@ -6,13 +6,11 @@ import Sor from "./Sor.js";
 export default class Table{
     constructor(list, parrentElement){
         this.list = list;
-        console.log(list)
         this.htmlCreate(list, parrentElement)
         
     }
 
     htmlCreate(list,parrentElement){
-        console.log(list)
         let table = document.createElement("table");
         let tbodyElement = document.createElement("tbody");
         let theadElement = document.createElement("thead")
@@ -20,9 +18,10 @@ export default class Table{
         $(table).append(theadElement);
         $(table).append(tbodyElement);
         new Fejlec(adatleiro, theadElement);
-        console.log(list)
+        let index = 1
         list.forEach(element => {
-            new Sor(element,tbodyElement)
+            new Sor(element, index, tbodyElement)
+            index++
         });
 
     }

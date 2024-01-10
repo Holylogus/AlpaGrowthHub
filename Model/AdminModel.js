@@ -4,8 +4,8 @@ export default class AdminModel{
         console.log("model")
     }
 
-    getData(vegpont, callback){
-        axios.get(vegpont)
+    getData(endpoint, callback){
+        axios.get(endpoint)
         .then(res => {
             console.log(res)
             callback(res.data.books)
@@ -15,10 +15,22 @@ export default class AdminModel{
         })
     }
     
-    postData(vegpont, callback){
-        axios.post(vegpont)
+    postData(endpoint, callback){
+        axios.post(endpoint)
         .then(res => {
             console.log(res)
+        })
+        .catch(err => {
+            console.error(err); 
+        })
+    }
+
+    deleteData(vegpont,id){
+        axios
+        .delete(vegpont+"/"+id)
+        .then(res => {
+            console.log(res)
+            callback(res)
         })
         .catch(err => {
             console.error(err); 

@@ -1,10 +1,21 @@
 export default class Sor{
     #obj = {};
-    constructor(obj, parrentElement){
+    constructor(obj, index, parrentElement){
         this.#obj = obj;
+        this.id = index;
         this.parrentElement = parrentElement;
         this.htmlConstruct();
+        this.deleteElement = $(this.parrentElement).find(".delete:last");
+        this.deleteElement.on("click", ()=>{
+            this.trigger("deleteRow")
+        })
     }
+
+    trigger(e){
+        const myEvent = new CustomEvent(e,{detail:this.id})
+        window.dispatchEvent(myEvent)
+    }
+
 
     htmlConstruct(){
         let row = document.createElement("tr");
