@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: Monsterrat;
+    src: url(/Fonts/FontsFree-Net-Montserrat-SemiBold.ttf);
+}
+body{
+    background-color: #3B3B3B;
+
+}
+nav{
+    height: 6rem;
+    background-color: #3B3B3B;
+}
+nav img{
+    height: 5rem;
+    border-radius: 0%;
+}
+.nav-item a{
+    color: white;
+}
