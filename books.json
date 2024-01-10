@@ -4,6 +4,7 @@
         "title" : "Gazdag Papa Szegény Papa",
         "author" : "Robert T.Kiyosaki",
         "price" : 3490,
+        "img" : "images/uploads/GazdagPapa_SzegenyPapa.jpg",
         "category" : "üzleti"
     },
     {
@@ -11,6 +12,7 @@
         "title" : "Békés Harcos Útja",
         "author" : "Dan Millman",
         "price" : 4490,
+        "img" : "images/uploads/BekesHarcosUtja.jpg",
         "category" : "pszichológiai"
     },
     {
@@ -18,62 +20,63 @@
         "title" : "Gondolkodj és Gazdagodj",
         "author" : "Napoleon Hill",
         "price" : 4490,
+        "img" : "images/uploads/GondolkodjEsGazdagodj.jpg",
         "category" : "üzleti"
     },
     {
         "id": 4,
-        "title" : "Gondolkodj és Gazdagodj",
-        "author" : "Napoleon Hill",
-        "price" : 4490,
-        "category" : "business"
-    },
-    {
-        "id": 5,
         "title" : "A Kiemelkedően Sikeres Emberek 7 Szokása",
         "author" : "Stephen R.Covey",
         "price" : 7850,
+        "img" : "images/uploads/SikeresEmberek7Szokasa.jpg",
         "category" : "önfejlesztő"
     },
     {
-        "id": 6,
+        "id": 5,
         "title" : "Vegyél Rá Bárkit Bármire",
         "author" : "Dr. David J.Liberman",
         "price" : 3480,
+        "img" : "images/uploads/SikeresEmberek7Szokasa.jpg",
+        "category" : "pszichológiai"
+    },
+    {
+        "id": 6,
+        "title" : "Olvass az Emberekben",
+        "author" : "Dr. David J.Liberman",
+        "price" : 4680,
+        "img" : "images/uploads/OlvassAzEmberekben.jpg",
         "category" : "pszichológiai"
     },
     {
         "id": 7,
-        "title" : "Olvass az Emberekben",
-        "author" : "Dr. David J.Liberman",
-        "price" : 4680,
-        "category" : "pszichológiai"
-    },
-    {
-        "id": 8,
         "title" : "Akasa Krónika",
         "author" : "Linda Howe",
         "price" : 3520,
+        "img" : "images/uploads/AkshaKronika.jpg",
         "category" : "ezotéria"
     },
     {
-        "id": 9,
+        "id": 8,
         "title" : "Ne Agyald Túl",
         "author" : "Nick Trenton",
         "price" : 4050,
+        "img" : "images/uploads/NeAgyaldTul.jpg",
+        "category" : "önfejlesztő"
+    },
+    {
+        "id": 9,
+        "title" : "Gazdagodj Boldogan",
+        "author" : "Szendrei Ádám",
+        "price" : 5020,
+        "img" : "images/uploads/GadzagodjBoldogan.jpg",
         "category" : "önfejlesztő"
     },
     {
         "id": 10,
-        "title" : "Gazdagodj Boldogan",
-        "author" : "Szendrei Ádám",
-        "price" : 5020,
-        "category" : "önfejlesztő"
-    },
-    {
-        "id": 11,
         "title" : "Szuper Én",
         "author" : "Szendrei Ádám",
         "price" : 5490,
+        "img" : "images/uploads/SzuperEn.jpg",
         "category" : "önfejlesztő"
     }
 ]
