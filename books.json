@@ -1,0 +1,80 @@
+{"books": [
+    {
+        "id" : 1,
+        "title" : "Gazdag Papa Szegény Papa",
+        "author" : "Robert T.Kiyosaki",
+        "price" : 3490,
+        "category" : "üzleti"
+    },
+    {
+        "id" : 2,
+        "title" : "Békés Harcos Útja",
+        "author" : "Dan Millman",
+        "price" : 4490,
+        "category" : "pszichológiai"
+    },
+    {
+        "id": 3,
+        "title" : "Gondolkodj és Gazdagodj",
+        "author" : "Napoleon Hill",
+        "price" : 4490,
+        "category" : "üzleti"
+    },
+    {
+        "id": 4,
+        "title" : "Gondolkodj és Gazdagodj",
+        "author" : "Napoleon Hill",
+        "price" : 4490,
+        "category" : "business"
+    },
+    {
+        "id": 5,
+        "title" : "A Kiemelkedően Sikeres Emberek 7 Szokása",
+        "author" : "Stephen R.Covey",
+        "price" : 7850,
+        "category" : "önfejlesztő"
+    },
+    {
+        "id": 6,
+        "title" : "Vegyél Rá Bárkit Bármire",
+        "author" : "Dr. David J.Liberman",
+        "price" : 3480,
+        "category" : "pszichológiai"
+    },
+    {
+        "id": 7,
+        "title" : "Olvass az Emberekben",
+        "author" : "Dr. David J.Liberman",
+        "price" : 4680,
+        "category" : "pszichológiai"
+    },
+    {
+        "id": 8,
+        "title" : "Akasa Krónika",
+        "author" : "Linda Howe",
+        "price" : 3520,
+        "category" : "ezotéria"
+    },
+    {
+        "id": 9,
+        "title" : "Ne Agyald Túl",
+        "author" : "Nick Trenton",
+        "price" : 4050,
+        "category" : "önfejlesztő"
+    },
+    {
+        "id": 10,
+        "title" : "Gazdagodj Boldogan",
+        "author" : "Szendrei Ádám",
+        "price" : 5020,
+        "category" : "önfejlesztő"
+    },
+    {
+        "id": 11,
+        "title" : "Szuper Én",
+        "author" : "Szendrei Ádám",
+        "price" : 5490,
+        "category" : "önfejlesztő"
+    }
+]
+}
