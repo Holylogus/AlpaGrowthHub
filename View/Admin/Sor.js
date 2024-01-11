@@ -1,4 +1,4 @@
-import { adatleiro } from "./adatleiro.js";
+import { headerDescription } from "./adatleiro.js";
 
 export default class Sor{
     #obj = {};
@@ -22,17 +22,28 @@ export default class Sor{
     htmlConstruct(){
         
         let row = document.createElement("tr");
-        for (const key in adatleiro) {
+        //Adatok feltöltése
+        for (const key in headerDescription) {
             let cell = document.createElement("td");
             cell.textContent = `${this.#obj[key]}`
             $(row).append(cell);
         }
+        //Szerkesztés Gomb
+        let editCell = document.createElement("td");
+        let editButton = document.createElement("button");
+        editButton.classList.add("edit");
+        editButton.textContent = "Szerkesztés"
+        $(editCell).append(editButton);
+        $(row).append(editCell);
+
+        //Törlés Gomb
         let deleteCell = document.createElement("td")
         let deleteButton = document.createElement("button");
-        deleteButton.classList.add("delete")
+        deleteButton.classList.add("delete");
         deleteButton.textContent = "X"
         $(deleteCell).append(deleteButton);
         $(row).append(deleteCell);
+        
         $(this.parrentElement).append(row);
     }
 }

@@ -1,4 +1,4 @@
-import { adatleiro } from "./adatleiro.js";
+import { headerDescription } from "./adatleiro.js";
 import Fejlec from "./Fejlec.js";
 import Sor from "./Sor.js";
 
@@ -17,7 +17,7 @@ export default class Table{
         $(parrentElement).append(table);
         $(table).append(theadElement);
         $(table).append(tbodyElement);
-        new Fejlec(adatleiro, theadElement);
+        new Fejlec(headerDescription, theadElement);
         let index = 1
         list.forEach(element => {
             new Sor(element, index, tbodyElement)

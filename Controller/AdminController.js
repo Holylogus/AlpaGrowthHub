@@ -10,11 +10,15 @@ export default class AdminController {
             console.log(e.detail)
             this.adminModel.deleteData("http://127.0.0.1:8000/api/books", e.detail)
         });
+        $(window).on("PostNewData", (e) => {
+            this.adminModel.postData("http://127.0.0.1:8000/api/books", e.detail)
+        });
+        
     }
 
     megjelenit(list){
         //console.log(list)
         new Table(list, $(".admin"));
-        new AdminUrlapView($(".admin-form"));
+        new AdminUrlapView($(".modal-body"),$(".modal-footer"));
     }
 }

@@ -15,8 +15,17 @@ export default class AdminModel{
         })
     }
     
-    postData(endpoint, callback){
-        axios.post(endpoint)
+    postData(endpoint, data){
+        axios.post(endpoint, data)
+        .then(res => {
+            console.log(res)
+        })
+        .catch(err => {
+            console.error(err); 
+        })
+    }
+    putData(endpoint,id,data){
+        axios.put(endpoint +"/" + id, data)
         .then(res => {
             console.log(res)
         })

@@ -46,5 +46,42 @@ td button{
     color: #FFCC57;
     font-weight: bold;
     width: max-content;
-    margin: 2px;
+    margin: 0.1rem;
+    padding: 0.1rem;
+
+}
+.admin-form{
+    margin-top: 2rem;
+}
+.modal-content{
+    min-width: 100vh;
+    height: 80vh;
+}
+#modal-button{
+    background-color: black;
+    color: #FFCC57;
+    font-weight: bold;
+    width: max-content;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    margin-top: 2rem;
+}
+form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+form div{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+label{
+    margin: 0.25rem;
+}
+input{
+    margin: 0.1rem;
 }
