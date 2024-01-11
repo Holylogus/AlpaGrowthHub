@@ -1,4 +1,5 @@
 import AdminModel from "../Model/AdminModel.js"
+import AdminUrlapView from "../View/Admin/AdnminUrlapView.js";
 import Table from "../View/Admin/Table.js";
 
 export default class AdminController {
@@ -14,5 +15,6 @@ export default class AdminController {
     megjelenit(list){
         //console.log(list)
         new Table(list, $(".admin"));
+        new AdminUrlapView($(".admin-form"));
     }
 }
