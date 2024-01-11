@@ -8,7 +8,7 @@ export default class AdminModel{
         axios.get(endpoint)
         .then(res => {
             console.log(res)
-            callback(res.data.books)
+            callback(res.data)
         })
         .catch(err => {
             console.error(err); 
@@ -30,7 +30,6 @@ export default class AdminModel{
         .delete(vegpont+"/"+id)
         .then(res => {
             console.log(res)
-            callback(res)
         })
         .catch(err => {
             console.error(err); 

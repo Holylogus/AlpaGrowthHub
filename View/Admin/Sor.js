@@ -1,3 +1,5 @@
+import { adatleiro } from "./adatleiro.js";
+
 export default class Sor{
     #obj = {};
     constructor(obj, index, parrentElement){
@@ -18,8 +20,9 @@ export default class Sor{
 
 
     htmlConstruct(){
+        
         let row = document.createElement("tr");
-        for (const key in this.#obj) {
+        for (const key in adatleiro) {
             let cell = document.createElement("td");
             cell.textContent = `${this.#obj[key]}`
             $(row).append(cell);

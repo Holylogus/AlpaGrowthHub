@@ -39,6 +39,7 @@ table th{
 table td{
     border: 1px solid black;
     text-align: center;
+    padding: 0.25rem;
 }
 td button{
     background-color: black;
