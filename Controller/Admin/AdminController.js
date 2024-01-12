@@ -1,5 +1,4 @@
 import AdminModel from "../../Model/AdminModel.js"
-import AdminUrlapView from "../../View/Admin/PostUrlapView.js";
 import Table from "../../View/Admin/Table.js";
 
 export default class AdminController {

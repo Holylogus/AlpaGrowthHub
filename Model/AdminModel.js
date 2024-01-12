@@ -1,13 +1,13 @@
 
 export default class AdminModel{
     constructor(){
-        console.log("model")
+        //console.log("model")
     }
 
     getData(endpoint, callback){
         axios.get(endpoint)
         .then(res => {
-            console.log(res)
+            //console.log(res)
             callback(res.data)
         })
         .catch(err => {
