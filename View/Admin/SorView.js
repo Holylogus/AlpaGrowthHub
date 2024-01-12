@@ -12,6 +12,10 @@ export default class Sor{
         this.deleteElement.on("click", ()=>{
             this.trigger("deleteRow")
         })
+        this.editElement = $(this.parrentElement).find(".edit:last");
+        $(this.editElement).on("click", () => {
+            this.trigger("editRow")
+        });
     }
 
     trigger(e){
@@ -32,6 +36,7 @@ export default class Sor{
         //Szerkesztés Gomb
         let editCell = document.createElement("td");
         let editButton = document.createElement("button");
+        editButton.classList.add("edit")
         editButton.setAttribute("type","button");
         editButton.textContent = "Szerkesztés"
         editButton.setAttribute("data-bs-toggle", "modal");
@@ -47,8 +52,6 @@ export default class Sor{
         deleteButton.textContent = "X"
         $(deleteCell).append(deleteButton);
         $(row).append(deleteCell);
-
-        //Sorok létrehozásaok létrehozzuk a rejtett modal-t is.
         
         $(this.parrentElement).append(row);
         

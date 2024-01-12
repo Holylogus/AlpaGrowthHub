@@ -1,7 +1,8 @@
-import AdminController from "./Controller/AdminController.js";
-import PublicController from "./Controller/PublicController.js";
+import AdminController from "./Controller/Admin/AdminController.js";
+import UrlapController from "./Controller/Admin/UrlapController.js";
+
 
 $(function () {
     new AdminController();
-    
+    new UrlapController();
 });

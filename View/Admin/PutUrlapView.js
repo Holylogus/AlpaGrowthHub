@@ -1,37 +1,37 @@
 import { headerDescription } from "./adatleiro.js";
 
+export default class PutUrlapView{
 
-
-export default class AdminUrlapView{
-    #formdata = {}
-    constructor(parrentElement, submitElement){
+    constructor(parrentElement, submitElement, obj){
         this.parrentElement = parrentElement;
         this.submitElement = submitElement;
+        this.obj = obj;
         this.htmlConsturct();
         //submit gomb megfogása
-         this.submitButton = $("#submit")
+         this.submitButton = $("#put")
 
         //input elemek megfogása
-        this.title = $("#title");
-        this.author = $("#author");
-        this.price = $("#price");
-        this.img = $("#img");
-        this.category = $("#category");
+        this.title = $("#putTitle");
+        this.author = $("#putAuthor");
+        this.price = $("#putPrice");
+        this.img = $("#putImg");
+        this.category = $("#putCategory");
         //eseménykezelés - Submit
+        console.log(obj)
         $(this.submitButton).on("click", (e) => {
             e.preventDefault();
-            this.#formdata.title = $(this.title).val();
-            this.#formdata.author = $(this.author).val();
-            this.#formdata.price = $(this.price).val();
-            this.#formdata.img = $(this.img).val();
-            this.#formdata.category = $(this.category).val();
-            console.log(this.#formdata);
-            this.trigger("PostNewData");
+            this.obj.title = $(this.title).val();
+            this.obj.author = $(this.author).val();
+            this.obj.price = $(this.price).val();
+            this.obj.img = $(this.img).val();
+            this.obj.category = $(this.category).val();
+            console.log(this.obj);
+            this.trigger("PutNewData");
         });
     }
 
     trigger(myEvent){
-        const e = new CustomEvent(myEvent,{detail:this.#formdata})
+        const e = new CustomEvent(myEvent,{detail:this.obj})
         window.dispatchEvent(e);
     }
 
@@ -45,12 +45,12 @@ export default class AdminUrlapView{
 
         //Cím mező létrehozása
         let tileLable = document.createElement("label");
-        tileLable.setAttribute("for", "title");
+        tileLable.setAttribute("for", "putTitle");
         tileLable.textContent = "Cím";
         let titleInput = document.createElement("input");
         titleInput.setAttribute("type", "text");
-        titleInput.setAttribute("id", "title");
-        titleInput.setAttribute("name", "title");
+        titleInput.setAttribute("id", "putTitle");
+        titleInput.setAttribute("name", "putTitle");
         titleInput.setAttribute("required", "");
         let titleDiv = document.createElement("div")
         titleDiv.classList.add("title")
@@ -60,12 +60,12 @@ export default class AdminUrlapView{
 
         //Szerző mező létrehozása
         let authorLable = document.createElement("label");
-        authorLable.setAttribute("for", "author");
+        authorLable.setAttribute("for", "putAuthor");
         authorLable.textContent = "Szerző:";
         let authorInput = document.createElement("input");
         authorInput.setAttribute("type", "text");
-        authorInput.setAttribute("id", "author");
-        authorInput.setAttribute("name", "author");
+        authorInput.setAttribute("id", "putAuthor");
+        authorInput.setAttribute("name", "putAuthor");
         authorInput.setAttribute("required", "");
         let authorDiv = document.createElement("div")
         titleDiv.classList.add("author")
@@ -75,12 +75,12 @@ export default class AdminUrlapView{
 
         //Ár mező létrehozása
         let priceLable = document.createElement("label");
-        priceLable.setAttribute("for", "price");
+        priceLable.setAttribute("for", "putPrice");
         priceLable.textContent = "Ár:";
         let priceInput = document.createElement("input");
         priceInput.setAttribute("type", "number");
-        priceInput.setAttribute("id", "price");
-        priceInput.setAttribute("name", "price");
+        priceInput.setAttribute("id", "putPrice");
+        priceInput.setAttribute("name", "priputPricece");
         priceInput.setAttribute("required", "");
         let priceDiv = document.createElement("div")
         priceDiv.classList.add("price")
@@ -90,12 +90,12 @@ export default class AdminUrlapView{
 
         //Kép felöltés - egyenlőre csak textként fogadjuk, mint ha elérési út lenne
         let imgLable = document.createElement("label");
-        imgLable.setAttribute("for", "img");
+        imgLable.setAttribute("for", "putImg");
         imgLable.textContent = "Képfelöltés:";
         let imgInput = document.createElement("input");
         imgInput.setAttribute("type", "text");
-        imgInput.setAttribute("id", "img");
-        imgInput.setAttribute("name", "img");
+        imgInput.setAttribute("id", "putImg");
+        imgInput.setAttribute("name", "putImg");
         imgInput.setAttribute("required", "");
         let imgDiv = document.createElement("div")
         imgDiv.classList.add("price")
@@ -105,12 +105,12 @@ export default class AdminUrlapView{
 
         //Kategória létrehozás
         let categoryLable = document.createElement("label");
-        categoryLable.setAttribute("for", "category");
+        categoryLable.setAttribute("for", "putCategory");
         categoryLable.textContent = "Kategória:";
         let categoryInput = document.createElement("input");
         categoryInput.setAttribute("type", "text");
-        categoryInput.setAttribute("id", "category");
-        categoryInput.setAttribute("name", "category");
+        categoryInput.setAttribute("id", "putCategory");
+        categoryInput.setAttribute("name", "putCategory");
         categoryInput.setAttribute("required", "");
         let categoryDiv = document.createElement("div")
         categoryDiv.classList.add("category")
@@ -124,7 +124,7 @@ export default class AdminUrlapView{
         submitButton.classList.add("btn-secondary")
         submitButton.setAttribute("type", "submit");
         submitButton.setAttribute("value", "Küldés")
-        submitButton.setAttribute("id", "submit")
+        submitButton.setAttribute("id", "put")
         submitButton.setAttribute("data-bs-dismiss", "modal")
         $(this.submitElement).append(submitButton);
     }
