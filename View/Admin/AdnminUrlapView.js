@@ -3,8 +3,7 @@ import { headerDescription } from "./adatleiro.js";
 
 
 export default class AdminUrlapView{
-    #formData = {}
-    
+    #formdata = {}
     constructor(parrentElement, submitElement){
         this.parrentElement = parrentElement;
         this.submitElement = submitElement;
@@ -21,18 +20,18 @@ export default class AdminUrlapView{
         //eseménykezelés - Submit
         $(this.submitButton).on("click", (e) => {
             e.preventDefault();
-            this.#formData.title = $(this.title).val();
-            this.#formData.author = $(this.author).val();
-            this.#formData.price = $(this.price).val();
-            this.#formData.img = $(this.img).val();
-            this.#formData.category = $(this.category).val();
-            console.log(this.#formData);
+            this.#formdata.title = $(this.title).val();
+            this.#formdata.author = $(this.author).val();
+            this.#formdata.price = $(this.price).val();
+            this.#formdata.img = $(this.img).val();
+            this.#formdata.category = $(this.category).val();
+            console.log(this.#formdata);
             this.trigger("PostNewData");
         });
     }
 
     trigger(myEvent){
-        const e = new CustomEvent(myEvent,{detail:this.#formData})
+        const e = new CustomEvent(myEvent,{detail:this.#formdata})
         window.dispatchEvent(e);
     }
 

@@ -13,12 +13,16 @@ export default class AdminController {
         $(window).on("PostNewData", (e) => {
             this.adminModel.postData("http://127.0.0.1:8000/api/books", e.detail)
         });
-        
+        $(window).on("PutNewData",  (e) => {
+            this.adminModel.putData("http://127.0.0.1:8000/api/books",e.detail)
+        });
     }
 
     megjelenit(list){
         //console.log(list)
+        new AdminUrlapView($("#PostFormBody"),$("#PostFormFooter"));
+        new AdminUrlapView($("#PutFormBody"),$("#PutFormFooter"));
         new Table(list, $(".admin"));
-        new AdminUrlapView($(".modal-body"),$(".modal-footer"));
+        
     }
 }

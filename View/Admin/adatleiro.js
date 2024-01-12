@@ -14,5 +14,4 @@ export const dataDescription = {
         placeholder: "A könyv címe",
         pattern: "[A-z][a-z]",
     }
-
 }

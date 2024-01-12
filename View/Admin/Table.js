@@ -1,6 +1,6 @@
 import { headerDescription } from "./adatleiro.js";
 import Fejlec from "./Fejlec.js";
-import Sor from "./Sor.js";
+import Sor from "./SorView.js";
 
 
 export default class Table{
